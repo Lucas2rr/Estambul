@@ -1,0 +1,123 @@
+index.htlm <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disfruta en Estambul</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for better visual appeal */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #4a00e0, #8e2de2); /* Purple gradient */
+        }
+        .card-shadow {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .button-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%);
+            border-radius: 1rem; /* Match card border-radius */
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+    <div class="relative w-full max-w-4xl bg-white rounded-2xl overflow-hidden card-shadow">
+        <div class="relative h-64 md:h-96 w-full">
+            <img src="https://placehold.co/1200x600/3498db/ffffff?text=Estambul" alt="Vista panorámica de Estambul" class="w-full h-full object-cover rounded-t-2xl">
+            <div class="image-overlay flex flex-col justify-end p-6">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight text-center drop-shadow-lg">
+                    DISFRUTA EN ESTAMBUL
+                </h1>
+                <p class="text-xl md:text-2xl text-white font-semibold text-center mt-2 drop-shadow-md">
+                    5 DÍAS Y 4 NOCHES
+                </p>
+            </div>
+        </div>
+
+        <div class="p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">INCLUYE</h2>
+                <ul class="space-y-3 text-lg text-gray-700">
+                    <li class="flex items-center">
+                        <svg class="w-6 h-6 text-purple-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        Boletos ida y vuelta
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-6 h-6 text-purple-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        Hospedaje en Santa Sophia Hotel
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-6 h-6 text-purple-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        Desayunos
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-6 h-6 text-purple-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        Crucero por el Bósforo y el Cuerno de Oro
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col justify-between bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <div>
+                    <p class="text-4xl md:text-5xl font-extrabold text-purple-700 mb-4 text-center">
+                        750 €
+                    </p>
+                    <p class="text-xl md:text-2xl font-semibold text-gray-600 text-center mb-6">
+                        Para 2 PERSONAS
+                    </p>
+                    <p class="text-lg text-gray-700 mb-2 text-center">
+                        Saliendo desde:
+                    </p>
+                    <p class="text-xl font-bold text-gray-800 text-center mb-6">
+                        OPORTO, LISBOA O MADRID
+                    </p>
+                    <p class="text-lg text-gray-700 mb-2 text-center">
+                        Fechas:
+                    </p>
+                    <p class="text-xl font-bold text-gray-800 text-center">
+                        12 AL 16 NOVIEMBRE 2025
+                    </p>
+                </div>
+                <button onclick="alert('¡Gracias por tu interés! Esta es una simulación. Para reservar, visita Boletos Seguros en redes sociales.')"
+                    class="mt-8 w-full gradient-bg text-white font-bold py-4 px-6 rounded-full text-xl md:text-2xl transition-all duration-300 button-hover">
+                    ¡Reservar Ahora!
+                </button>
+            </div>
+        </div>
+
+        <div class="p-6 md:p-8 bg-gray-100 text-center rounded-b-2xl border-t border-gray-200">
+            <p class="text-lg text-gray-600">
+                Síguenos en redes sociales:
+                <span class="font-bold text-purple-700">@BOLETOSSEGUROS</span>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Optional: Add more interactive elements or animations here if needed.
+        // For example, a simple scroll animation or a modal for the "Reservar Ahora" button.
+        // As per instructions, using alert for simplicity, but a custom modal is preferred.
+    </script>
+</body>
+</html>
+
